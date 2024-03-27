@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Open+Sans:wght@300;400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+  scroll-margin-top: 4rem;
+  overflow: hidden;
+}
+html,
+body,
+#root,
+.app {
+  height: 100%;
+  @apply bg-white;
+  @apply text-black;
+  @apply font-opensans;
+  @apply text-base;
+  text-align: justify;
+  cursor: default;
+  scroll-behavior: smooth;
+
+}
+body{
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+li {
+  text-transform: capitalize;
+}
+@layer components {
+  h1 {
+    @apply text-center underline underline-offset-8 decoration-orange font-garamond font-bold text-2xl pb-[2rem];
+  }
+}
